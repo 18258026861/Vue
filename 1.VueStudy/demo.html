@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+
+<!--这个就是视图层，显示数据，这个数据从Model层经过ViewModel来到View，ViewModel是至关重要的一步-->
+<!--Vue模板语法-->
+<div id="app">
+<!--    这里显示的就是model中给的数据，实时更新，
+        这就是虚拟DOM：不操作DOM，运行和编译同时进行，直接更新数据，不需要刷新页面-->
+    {{message}}
+</div>
+<div id="app2">
+    {{hello}}
+</div>
+
+<script>
+    /*vue就是模型层，提供数据*/
+    var vue1 = new Vue({
+        //绑定元素
+        el: "#app",
+        //数据交给前端控制
+        data:{
+            message:"hello Vue"
+        }
+    })
+
+    var vue2 = new Vue({
+        el:"#app2",
+        data:{
+            hello:"hi"
+        }
+    })
+</script>
+
+</body>
+</html>
