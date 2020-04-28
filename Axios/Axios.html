@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+<div id="app">
+    <p>{{info.name}}</p>
+    <a v-bind:href="info.url">Vue</a>
+    <p>{{info.page}}</p>
+
+</div>
+
+
+</body>
+<script>
+    var vm = new  Vue({
+        el:'#app',
+        data:{
+                info:{
+                    name: null,
+                    url: null,
+                    page: null
+                }
+        },
+        mounted(){
+            //和ajax差不多 get(获取的接口)    ，then（参数）获得响应，并进行操作（输出响应的数据）
+            /*输出可以，但是我如果想渲染到页面上该怎么办，显然data:设置属性不现实，那么就可以使用data()方法*/
+            //使用这个写法好像并不能渲染数据
+            /*axios.get('data.json').then(function (response) {
+                console.log(response.data);
+                this.info = response.data;
+            });*/
+            //   lambda表达式简写
+            axios.get("data.json").then(Response=>(this.info = Response.data));
+
+            }
+        //    输出结果   Object { name: "YY", url: "www", page: 1 }
+
+    })
+</script>
+</html>

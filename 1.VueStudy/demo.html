@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -15,7 +15,9 @@
     {{message}}
 </div>
 <div id="app2">
-    {{hello}}
+<!--    绑定在元素上-->
+    <span v-bind:title="hello">鼠标悬停在上面会显示信息</span>
+     <p>{{hello}}</p>
 </div>
 
 <script>
@@ -26,8 +28,11 @@
         //数据交给前端控制
         data:{
             message:"hello Vue"
+        },
+        create:function () {
+            alert(this.message)
         }
-    })
+    });
 
     var vue2 = new Vue({
         el:"#app2",

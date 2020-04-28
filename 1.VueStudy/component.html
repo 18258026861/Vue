@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+<!--    组件和Vue绑定是同级的，所以需要v-bind中间商绑定两者，动态传递prop-->
+<!--    v-bind:属性=“参数”-->
+    <cc v-for="item in items" v-bind:item="item"></cc>
+    <cc></cc>
+</div>
+
+<script>
+    /*定义一个Vue组件,名字叫cc,好像只能小写
+    *       这个组件的标签名就叫cc，那么这个组件就会被模板代替*/
+
+    Vue.component("cc",{
+        //Prop 是自定义 attribute，接收参数，当传值过来后，这个item就变成了组件的属性
+        props:['item'],
+        //模板，里面写的就是组件的HTML代码
+        template:'<li>{{item.name}}</li>'
+    });
+    var vm = new Vue({
+        el:'#app',
+        data:{
+           items: [{name :'YY'},{name:'YZY'}]
+        }
+    });
+</script>
+
+</body>
+</html>

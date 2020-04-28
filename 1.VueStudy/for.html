@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+    parents:
+{{name}}:
+<!--类似于foreach-->
+    <li v-for="list in lists">
+        children:
+        {{list.message}}
+        {{list.message1}}-
+    </li>
+</div>
+<script>
+
+    var vue = new Vue({
+        el:'#app',
+        data:{
+            name:'yzy',
+            //数组中有多个键值对
+            lists:[
+                {message:"YY"},
+                {message1:"YZY"}
+                ]
+        },
+
+    });
+
+</script>
+</body>
+</html>

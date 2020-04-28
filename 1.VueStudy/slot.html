@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+
+        <p>列表书籍</p>
+    <ul>
+        <lt>书籍</lt>
+        <li>java</li>
+        <li>python</li>
+        <li>php</li>
+   </ul>
+
+<!--上面的效果等同于下面的，可复用-->
+    <book>
+<!--       这边的插槽也要指定组件 绑定要在后面加上    ：绑定的属性-->
+        <book-title slot="book-title" v-bind:title1="title"></book-title>
+        <book-item slot="book-item" v-for="item in items" v-bind:item1="item"></book-item>
+    </book>
+</div>
+
+
+<script>
+
+    Vue.component('book',{
+        template: '<div>' +
+            //    需要将插槽和组件连接到一起,用name属性指定组件
+            '<slot name="book-title"></slot>' +
+            '<ul>' +
+            '<slot name="book-item"></slot>' +
+            '</ul>' +
+            '</div>'
+    });
+
+    Vue.component('book-title',{
+        //别忘了属性加‘’
+        props: ['title1'],
+        template: '<lt>{{title1}}</lt>'
+    });
+    Vue.component('book-item',{
+        props: ['item1'],
+        template: '<li>{{item1}}</li>\n'
+    });
+
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            items:['Java','Python'],
+            title:'书籍类型'
+        }
+    })
+</script>
+</body>
+</html>

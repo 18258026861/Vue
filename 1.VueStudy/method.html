@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-on="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+<div id="app">
+
+<!--    Vue的触发时间v-on-->
+    <button v-on:click="aa"></button>
+</div>
+
+<script>
+    var vue = new Vue({
+        el:'#app',
+        data:{
+            message:"YY"
+        },
+        //methods 注意，不是method，里面可以写很多个方法
+        methods:{
+        //    时间需要写在method里
+            aa:function () {
+                alert(this.message)
+            }
+        },
+        create:function () {
+            alert(this.message);
+        }
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+<div id="w">
+<!--  双向绑定，View层发生变化，Model层也要改变，使用v-model使数据发生改变-->
+<!--    value如果不写就读取内容-->
+    输入信息<input type="text" v-model="message">
+<p>显示输入的信息：{{message}}</p>
+
+    单选框
+<!--    因为单选框只有选项，不能读取内容，所以需要手动value选项-->
+    <p><input type="radio" value="boy" name="sexx" v-model="sex">男
+        <input type="radio" value="girl" name="sexx" v-model="sex">女
+    </p>
+<!--    单选框绑定的信息是value-->
+    <p>你选择的性别是 {{sex}}</p>
+
+
+    <p>下拉框
+        <select v-model="e">
+<!--            默认的话要加value-->
+            <option value="" disabled>请选择</option>
+            <option value="A" >A</option>
+            <option value="BB" >B</option>
+            <option>C</option>
+        </select></p>
+    <p>下拉框属性 {{e}}</p>
+</div>
+<script>
+    var vm = new Vue({
+        el:'#w',
+        data:{
+            message:'',
+            sex:'',
+            e:''
+        }
+    })
+</script>
+
+</body>
+</html>

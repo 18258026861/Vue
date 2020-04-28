@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+<!--    vue的判断-->
+    <h1 v-if="message">yes</h1>
+    <h1 v-else>no</h1>
+</div>
+<script>
+
+    var vue = new Vue({
+        el:'#app',
+        data:{
+            message:true
+        }
+    })
+
+</script>
+</body>
+</html>

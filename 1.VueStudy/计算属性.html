@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+
+</head>
+<body>
+
+<div id="app">
+<!--    通过方法-->
+    <p>it's method: {{getTime()}}</p>
+<!--    通过属性-->
+    <p>it's attrabute: {{getTime1}}</p>
+</div>
+
+
+<script>
+    var vm = new Vue({
+        el:'#app',
+        methods:{
+            getTime:function () {
+                //获取当前时间戳
+                return Date.now();
+            }
+        },
+        //计算属性，把方法当成属性，就不需要加()
+        computed:{
+            getTime1:function () {
+                return Date.now();
+            }
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad4d4c68-44ba-4e32-b7cf-dcc009092a40" name="Default Changelist" comment="" />
+    <list default="true" id="ad4d4c68-44ba-4e32-b7cf-dcc009092a40" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/for.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/if.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/method.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/slot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/双重绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.VueStudy/计算属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Axios/Axios.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Axios/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.VueStudy/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/1.VueStudy/demo.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +21,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Vue File" />
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -28,6 +49,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1b7vhOuVBYcubFXpq4Wdz9GMrpM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,6 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Vue" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Roaming/npm/node_modules/vue-cli" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,7 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -69,7 +94,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587996064893</updated>
-      <workItem from="1587996068544" duration="2671000" />
+      <workItem from="1587996068544" duration="5169000" />
+      <workItem from="1588037903672" duration="8113000" />
+      <workItem from="1588051936342" duration="633000" />
+      <workItem from="1588052574236" duration="6430000" />
+      <workItem from="1588071403779" duration="12996000" />
     </task>
     <servers />
   </component>
@@ -77,13 +106,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1587996114496">
+    <state x="574" y="206" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1588052794770">
       <screen x="0" y="0" width="1920" height="1024" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1024@0.0.1920.1024" timestamp="1587996114496" />
-    <state x="493" y="158" key="SettingsEditor" timestamp="1587996187272">
+    <state x="574" y="206" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1920.1024@0.0.1920.1024" timestamp="1588052794770" />
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1588040095887">
       <screen x="0" y="0" width="1920" height="1024" />
     </state>
-    <state x="493" y="158" key="SettingsEditor/0.0.1920.1024@0.0.1920.1024" timestamp="1587996187272" />
+    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1024@0.0.1920.1024" timestamp="1588040095887" />
+    <state x="825" y="411" width="294" height="201" key="Github.ShareDialog" timestamp="1587999249462">
+      <screen x="0" y="0" width="1920" height="1024" />
+    </state>
+    <state x="825" y="411" width="294" height="201" key="Github.ShareDialog/0.0.1920.1024@0.0.1920.1024" timestamp="1587999249462" />
+    <state x="814" y="218" key="Github.UntrackedFilesDialog" timestamp="1587999255566">
+      <screen x="0" y="0" width="1920" height="1024" />
+    </state>
+    <state x="814" y="218" key="Github.UntrackedFilesDialog/0.0.1920.1024@0.0.1920.1024" timestamp="1587999255566" />
+    <state x="493" y="158" key="SettingsEditor" timestamp="1588061304742">
+      <screen x="0" y="0" width="1920" height="1024" />
+    </state>
+    <state x="493" y="158" key="SettingsEditor/0.0.1920.1024@0.0.1920.1024" timestamp="1588061304742" />
+    <state x="619" y="371" width="699" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1588040116948">
+      <screen x="0" y="0" width="1920" height="1024" />
+    </state>
+    <state x="619" y="371" width="699" height="282" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1920.1024@0.0.1920.1024" timestamp="1588040116948" />
   </component>
 </project>
